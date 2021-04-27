@@ -12,7 +12,8 @@ public class CountingCharacters {
                 "into a form that can be factored allowing that side of the equation to " +
                 "equal zero. Once you’ve done that, it’s pretty straightforward from there.";
         char[] charactersInString = testString.toCharArray();
-
+        // characterCounts is hashmap
+        //charactersInString is the array of characters
         for (char character : charactersInString) {
             if (characterCounts.containsKey(character)) {
                 characterCounts.put(character, characterCounts.get(character) + 1);
