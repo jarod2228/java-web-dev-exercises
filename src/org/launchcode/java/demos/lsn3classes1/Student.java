@@ -17,12 +17,24 @@ public class Student {
         this.gpa = gpa;
     }
 
-//    public Student(String name, int studentId) {
-//        this.name = name;
-//        this.studentId = studentId;
-//        this.numberOfCredits = 0;
-//        this.gpa = 0;
-//    }
+    public void addGrade(int courseCredits, double grade) {
+        // Update the appropriate fields: numberOfCredits, gpa
+        double currentQualityScore = grade * courseCredits;
+
+    }
+
+    public String getGradeLevel() {
+        // Determine the grade level of the student based on numberOfCredits
+        if (numberOfCredits < 30) {
+            return "Freshman";
+        } else if (numberOfCredits > 29 && numberOfCredits < 60) {
+            return "Sophomore";
+        } else if (numberOfCredits > 59 && numberOfCredits < 90) {
+            return "Junior";
+        } else {
+            return "Senior";
+        }
+    }
 
     public String getName() {
         return name;
