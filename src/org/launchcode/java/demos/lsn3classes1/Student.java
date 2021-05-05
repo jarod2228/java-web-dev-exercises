@@ -21,6 +21,7 @@ public class Student {
         // Update the appropriate fields: numberOfCredits, gpa
         double currentQualityScore = grade * courseCredits;
 
+
     }
 
     public String getGradeLevel() {
