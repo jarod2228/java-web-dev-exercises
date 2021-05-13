@@ -4,7 +4,9 @@ import java.util.Comparator;
 
 public class ConeComparator implements Comparator {
     @Override
-    public int compare(Object o1, Object o2) {
+    public int compare(cone o1, cone o2) {
         // do stuff like flavor comparator did but by cost least to most expensive;
+        o1.getCost() - o2.getCost();
+
     }
 }
